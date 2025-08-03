@@ -63,8 +63,8 @@ function typeILoveYou(text, targetElement) {
 const heartMessages = [
   "Even though we’re apart, your smile still lights up everything for me. 💖",
   "A simple 'hey' from you feels like a warm hug across the distance. 🫂",
-  "You’re far, but never out of my thoughts — you’re woven into my days. 💫",
-  "I used to think home was a place — but now, it’s wherever I feel closest to you. 💗"
+  "You’re far, but never out of my thoughts, you’re woven into my days. 💫",
+  "I used to think home was a place, but now, it’s wherever I feel closest to you. 💗"
 ];
 
 function showMessage(index) {
@@ -79,15 +79,15 @@ const question = document.getElementById("main-question");
 const goBackBtn = document.getElementById("go-back-btn");
 
 const fallbackMessages = [
-  "Are you sure you don’t wanna be my girlfriend? 😢",
-  "Hmm... Maybe that was just a mistake? You can still say yes 😊",
-  "It’s okay. Mistakes happen. But I’m giving you one more chance 😌",
-  "Still no? Okay... but you're missing out on something pretty special 😌💔"
+  "Are you sure you don’t wanna be my girlfriend, Aananda? 😢",
+  "Hmm... Maybe that was just a mistake Aananda? You can still say yes 😊",
+  "It’s okay, Aananda. Mistakes happen. But I’m giving you one more chance 😌",
+  "Still no, Aananda? Okay... but you're missing out on something pretty special 😌💔"
 ];
 
 function respond(choice) {
   if (choice === "yes") {
-    typeILoveYou("I Love You 💖", question);
+    typeILoveYou("I Love You, Aananda 💖", question);
     goBackBtn.classList.remove("show");
     startHearts();
   } else {
@@ -96,7 +96,7 @@ function respond(choice) {
       question.innerText = fallbackMessages[Math.min(msgIndex, fallbackMessages.length - 1)];
       showGoBack();
     } else {
-      question.innerText = "Will you be my girlfriend? 💖";
+      question.innerText = "Will you be my girlfriend, Aananda? 💖";
       hideGoBack();
     }
     noClickCount++;
