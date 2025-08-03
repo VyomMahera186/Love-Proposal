@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be My Girlfriend?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="typing">Hey, I’ve been meaning to tell you something… 💭</div>
+
+    <h1>You’re on my mind all the time</h1>
+
+    <div class="hearts">
+      <div class="heart-card" onclick="showMessage(0)">Your smile still reaches me, even from miles away.</div>
+      <div class="heart-card" onclick="showMessage(1)">Just a message from you can change my entire day.</div>
+      <div class="heart-card" onclick="showMessage(2)">No distance can dull how special you are to me.</div>
+      <div class="heart-card" onclick="showMessage(3)">Being with you, even virtually, feels like home.</div>
+    </div>
+
+    <div id="heart-message" class="heart-message-box"></div>
+
+    <div class="message-box">
+      I don't know exactly how to say this perfectly, but here it goes:  
+      <br/><br/>
+      You're someone I feel incredibly drawn to. You're kind, funny, and you light up my world in the simplest ways.  
+      <br/><br/>
+      So, I wanted to ask you something that means a lot to me...
+    </div>
+
+    <div class="question" id="main-question">Will you be my girlfriend? 💖</div>
+    <button id="go-back-btn" onclick="goBack()">🔁 Go Back</button>
+
+    <div class="buttons">
+      <button onclick="respond('yes')">Yes 💕</button>
+      <button onclick="respond('no')">No ❌</button>
+    </div>
+  </div>
+
+  <div class="floating-hearts" id="hearts"></div>
+
+  <!-- Floating Heart Message Popup -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">×</span>
+      <p id="popup-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
